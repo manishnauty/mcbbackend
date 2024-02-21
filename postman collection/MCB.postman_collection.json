@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "93e826f1-e7f6-450e-adc4-ba1e307bd467",
+		"name": "MCB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28468976"
+	},
+	"item": [
+		{
+			"name": "currencies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwODQ5MzI2MywiZXhwIjoxNzA4NTc5NjYzfQ.FmaHtsfYwzN3tcxheEX8XPWu2oTiLIpmSKHfqFerAwzXjH9Kl8nMkqOLVqevtNKVxBVh8t4D7wwjqTroyDnrVg",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8080/app/bpea/currencies"
+			},
+			"response": []
+		},
+		{
+			"name": "facilitytypes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwODQ5MzI2MywiZXhwIjoxNzA4NTc5NjYzfQ.FmaHtsfYwzN3tcxheEX8XPWu2oTiLIpmSKHfqFerAwzXjH9Kl8nMkqOLVqevtNKVxBVh8t4D7wwjqTroyDnrVg",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8080/app/bpea/facilitytypes"
+			},
+			"response": []
+		},
+		{
+			"name": "documenttypes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwODQ5MzI2MywiZXhwIjoxNzA4NTc5NjYzfQ.FmaHtsfYwzN3tcxheEX8XPWu2oTiLIpmSKHfqFerAwzXjH9Kl8nMkqOLVqevtNKVxBVh8t4D7wwjqTroyDnrVg",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8080/app/bpea/documenttypes"
+			},
+			"response": []
+		},
+		{
+			"name": "FetchApplication",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwODQ5MzI2MywiZXhwIjoxNzA4NTc5NjYzfQ.FmaHtsfYwzN3tcxheEX8XPWu2oTiLIpmSKHfqFerAwzXjH9Kl8nMkqOLVqevtNKVxBVh8t4D7wwjqTroyDnrVg",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8080/app/bpea/fetchapplication"
+			},
+			"response": []
+		},
+		{
+			"name": "FetchapplicationById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwODQ5MzI2MywiZXhwIjoxNzA4NTc5NjYzfQ.FmaHtsfYwzN3tcxheEX8XPWu2oTiLIpmSKHfqFerAwzXjH9Kl8nMkqOLVqevtNKVxBVh8t4D7wwjqTroyDnrVg",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8080/app/bpea/fetchapplication/1"
+			},
+			"response": []
+		},
+		{
+			"name": "EvaluationFormCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwODQ5MzI2MywiZXhwIjoxNzA4NTc5NjYzfQ.FmaHtsfYwzN3tcxheEX8XPWu2oTiLIpmSKHfqFerAwzXjH9Kl8nMkqOLVqevtNKVxBVh8t4D7wwjqTroyDnrVg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fosreferenceNumber\": \"23423\",\r\n  \"type\": \"New\",\r\n  \"createdBy\": {\r\n    \"username\": \"dummy user\",\r\n    \"roles\": [\r\n      {\r\n        \"name\": \"ADMIN\"\r\n      }\r\n    ],\r\n    \"buisnessUnit\": \"Eebene BU\",\r\n    \"contactNumber\": \"51235167\"\r\n  },\r\n  \"facilityDto\": {\r\n    \"catagory\": \"25000 - Apartment\",\r\n    \"purpose\": \"1 – Reparation\",\r\n    \"term\": 300,\r\n    \"amount\": 2000,\r\n    \"type\": {\r\n      \"name\": \"Revolving \"\r\n    },\r\n    \"ccy\": {\r\n      \"name\": \"MUR\"\r\n    }\r\n  },\r\n  \"borrowersDto\": [\r\n    {\r\n      \"name\": \"borrower1\",\r\n      \"customerNumber\": \"customer\",\r\n      \"contactNumber\": \"0934905\",\r\n      \"email\": \"abs@gmail.com\",\r\n      \"address\": \"address\"\r\n    },\r\n    {\r\n      \"name\": \"borrower2\",\r\n      \"customerNumber\": \"customer2\",\r\n      \"contactNumber\": \"0932405\",\r\n      \"email\": \"abc@gmail.com\",\r\n      \"address\": \"address2\"\r\n    }\r\n  ],\r\n  \"documentsDto\": [\r\n    {\r\n      \"type\": {\r\n        \"name\": \"Title Deed\"\r\n      },\r\n      \"document\": \"\"\r\n    }\r\n  ],\r\n  \"commentsDto\": [\r\n    {\r\n      \"comments\": \"first user comment\",\r\n      \"createdDate\": \"12/02/2024\"\r\n    },\r\n    {\r\n      \"comments\": \"second comment\",\r\n      \"createdDate\": \"17/02/2024\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/app/bpea/evaluationform"
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\": \"Admin@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/auth/signin"
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\": \"Admin@123\",\r\n    \"role\":\"ADMIN\",\r\n    \"contactNumber\":\" admin user1\",\r\n    \"buisnessUnit\":\"admin testing unit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/auth/registerUser"
+			},
+			"response": []
+		},
+		{
+			"name": "GenerateNextAPIReference",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwODQwMjAwMiwiZXhwIjoxNzA4NDg4NDAyfQ.EvsYLEB-Y_1xA5QaboOjdKGFGEv47x5PKLhs3pIGKnuuIiHlAfZOCQPQPKtOm7iC6MbaT5fAiJbR-iy2GYqERg",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8080/app/bpea/nextappreference"
+			},
+			"response": []
+		}
+	]
+}
